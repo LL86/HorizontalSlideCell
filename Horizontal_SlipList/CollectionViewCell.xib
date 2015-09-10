@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="200"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I1d-Na-PeF">
+                        <rect key="frame" x="17" y="19" width="10" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="KVn-b3-L07"/>
+                            <constraint firstAttribute="width" constant="10" id="YXW-4M-qJz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="厨具 CookWare       " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUk-vU-K0P">
+                        <rect key="frame" x="39" y="13" width="274" height="27"/>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
+                        <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mU3-wf-7CS">
+                        <rect key="frame" x="1" y="50" width="398" height="142"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zqy-gy-fQh">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mU3-wf-7CS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="14V-cN-TNI"/>
+                <constraint firstItem="I1d-Na-PeF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="17" id="IBE-xH-Rmh"/>
+                <constraint firstItem="DUk-vU-K0P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="LV5-a4-sQJ"/>
+                <constraint firstItem="mU3-wf-7CS" firstAttribute="top" secondItem="DUk-vU-K0P" secondAttribute="bottom" constant="10" id="MuP-Se-BLh"/>
+                <constraint firstItem="I1d-Na-PeF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="19" id="Nmz-ve-hB1"/>
+                <constraint firstItem="mU3-wf-7CS" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottomMargin" id="Yvr-Cz-Jcl"/>
+                <constraint firstItem="mU3-wf-7CS" firstAttribute="top" secondItem="I1d-Na-PeF" secondAttribute="bottom" constant="11" id="mfE-rB-4hT"/>
+                <constraint firstAttribute="trailing" secondItem="DUk-vU-K0P" secondAttribute="trailing" constant="86" id="uJf-wG-XKB"/>
+                <constraint firstAttribute="trailing" secondItem="mU3-wf-7CS" secondAttribute="trailing" id="ugo-eG-Iqc"/>
+                <constraint firstItem="DUk-vU-K0P" firstAttribute="leading" secondItem="I1d-Na-PeF" secondAttribute="trailing" constant="12" id="zuv-aS-Ewt"/>
+            </constraints>
+            <size key="customSize" width="399" height="211"/>
+            <connections>
+                <outlet property="imageView" destination="I1d-Na-PeF" id="Zed-Of-dSy"/>
+                <outlet property="lableView" destination="DUk-vU-K0P" id="yds-au-RtO"/>
+                <outlet property="slipView" destination="mU3-wf-7CS" id="hcC-eF-4If"/>
+            </connections>
+            <point key="canvasLocation" x="227.5" y="259"/>
+        </collectionViewCell>
+    </objects>
+</document>
