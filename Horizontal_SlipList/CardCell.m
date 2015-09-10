@@ -19,7 +19,7 @@
 
     if (self) {
         self = [super initWithFrame:frame];
-
+        self.backgroundColor = [UIColor whiteColor];
         [self setRoundCell];
         [self setUpCardImg];
         [self setUpCardLabel];
@@ -33,13 +33,17 @@
     self.layer.cornerRadius = 14.0f;
     self.layer.masksToBounds = YES;
     self.clipsToBounds = YES;
+
+    self.layer.shadowColor = [UIColor redColor].CGColor;
+    self.layer.shadowOffset = CGSizeMake(0, 5);
+    self.layer.shadowOpacity = 0.1;
 }
 
 #pragma mark 图片
 - (void)setUpCardImg{
 
     self.cardImg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height - 30)];
-    self.cardImg.backgroundColor = [UIColor colorWithRed:0.9976 green:1.0 blue:0.8908 alpha:1.0];
+    self.cardImg.backgroundColor = [UIColor colorWithRed:0.5233 green:0.8291 blue:1.0 alpha:1.0];
 
     [self.contentView addSubview:self.cardImg];
 }
