@@ -34,7 +34,7 @@
     self.layer.masksToBounds = YES;
     self.clipsToBounds = YES;
 
-    self.layer.shadowColor = [UIColor redColor].CGColor;
+    self.layer.shadowColor = [UIColor blackColor].CGColor;
     self.layer.shadowOffset = CGSizeMake(0, 5);
     self.layer.shadowOpacity = 0.1;
 }
